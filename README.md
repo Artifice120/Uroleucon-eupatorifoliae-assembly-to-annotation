@@ -86,5 +86,3 @@ blobtools add --busco /lustre/isaac/scratch/jtorre28/Ue_open/redo.contigs.busco/
 
 
 
-
-
