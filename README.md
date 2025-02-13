@@ -66,7 +66,7 @@ minimap2 -ax map-ont \
          /lustre/isaac/scratch/jtorre28/minimap2/Ue-reads.sana.fastq \
  | samtools sort -@40 -O BAM -o /lustre/isaac/scratch/jtorre28/Ue_open/redo.contigs.bam -
 ```
-##Visualisation of coverage, taxonomy assignment, and BUSCO score with Blobtools visualizer
+## Visualisation of coverage, taxonomy assignment, and BUSCO score with Blobtools visualizer
 Blobtools was used to generate a snail plot, blob plot, and a TSV file containing the full predicted lineage of each contig assmbled 
 
 > Create the initial blobtools directory using the fasta file
