@@ -162,4 +162,18 @@ singularity exec /lustre/isaac/scratch/jtorre28/singularity_containers/busco:v5.
 > Another blob directory was made with this new assembly to genreate the final snail and blob plot to ensure no contaminants were introduced
 
 
+## Gene prediction of assembly with Helixer
+
+```
+singularity exec --nv --env 'RUST_BACKTRACE=full' /lustre/isaac/scratch/jtorre28/singularity_containers/helixer-docker_helixer_v0.3.3_cuda_11.8.0-cudnn8.sif Helixer.py --fasta-path  /lustre/isaac/scratch/jtorre28/Ue-patched/ue-sealed.filt.fa --gff-output-path /lustre/isaac/scratch/jtorre28/Ue-patched/ue-sealed.gff --lineage invertebrate --species Uroleucon_erigeronense --temporary-dir /lustre/isaac/scratch/jtorre28/singularity_containers/tmp
+```
+
+## functional annotation with entap
+transcript files were made using the reulting gff file output from helixer
+
+
+
+
+
+
 
