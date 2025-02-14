@@ -169,11 +169,14 @@ singularity exec --nv --env 'RUST_BACKTRACE=full' /lustre/isaac/scratch/jtorre28
 ```
 
 ## functional annotation with entap
+
 transcript files were made using the reulting gff file output from helixer
 
+> Homology searches done with NCBI NR database, uniprot tremble database, uniprot swissprot database, and the ref-seq inverebrate partition database
 
-
-
+```
+singularity exec entap.sif EnTAP --runN --run-ini kt-rick_entap_run.params --entap-ini entap_config.ini -d /lustre/isaac/scratch/jtorre28/database/swissprot/swissprot.dmnd -d /lustre/isaac/scratch/jtorre28/database/ref-seq/invert/invertebrate-all.protein.dmnd -d /lustre/isaac/scratch/jtorre28/database/cluster-nr/nr.dmnd -d /lustre/isaac/scratch/jtorre28/database/tremble/uniprot_trembl.dmnd
+```
 
 
 
